@@ -1,0 +1,58 @@
+{
+  "extensions": {
+    "authentication": {
+      "cookieSession": {
+        "secret": "<your strong secret here>"
+      },
+      "admin": {
+        "username": "admin",
+        "password": "password"
+      },
+      "enabled": false
+    },
+    "scripts": {
+      "timeout": 40000,
+      "strategy": "http-server"
+    },
+    "sample-template": {
+      "createSamples": true
+    },
+    "phantom-pdf": {
+      "numberOfWorkers": 1,
+      "timeout": 180000,
+      "allowLocalFilesAccess": false,
+      "defaultPhantomjsVersion": "2.1.1"
+    }
+  },
+  "httpPort": 5488,
+  "store": {
+    "provider": "fs"
+  },
+  "blobStorage": {
+    "provider": "fs"
+  },
+  "logger": {
+    "console": {
+      "transport": "console",
+      "level": "debug"
+    },
+    "file": {
+      "transport": "file",
+      "level": "info",
+      "filename": "logs/reporter.log"
+    },
+    "error": {
+      "transport": "file",
+      "level": "error",
+      "filename": "logs/error.log"
+    }
+  },
+  "allowLocalFilesAccess": true,
+  "templatingEngines": {
+    "timeout": 10000,
+    "strategy": "http-server"
+  },
+  "chrome": {
+    "timeout": 40000
+  }
+}

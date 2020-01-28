@@ -1,0 +1,160 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js'></script>
+
+    <style>
+        {#asset test-styles.css @encoding=utf8}
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Security code</th>
+                    <th>Type</th>
+                    <th>Currency</th>
+                    <th>Purchase value</th>
+                    <th>Market value</th>
+                    <th>TWR</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#groupTableData rows}}{{/groupTableData}}
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Total</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{#totalMarketValue rows}}{{/totalMarketValue}}</td>
+                    <td>{{#totalTWRValue rows}}{{/totalTWRValue}}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <canvas id='pieChart'></canvas>
+    </section>
+    
+    <section>
+        <canvas id='barChart'></canvas>
+    </section>
+
+    <section>
+        <h1 class="top-three">Three best performing positions</h1>
+        <table>
+            <tr>
+                <th>Security</th>
+                <th>TWR</th>
+            </tr>
+            {{#each twr.highestThree}}
+            <tr>
+                <td>{{security}}</td>
+                <td>{{twr}}%</td>
+            </tr>
+        {{/each}}
+        </table>
+        
+        <table>
+            <h1 class="worst-three">Three worst performing positions</h1>
+            <tr>
+                <th>Security</th>
+                <th>TWR</th>
+            </tr>
+            {{#each twr.lowestThree}}
+            <tr>
+                <td>{{security}}</td>
+                <td>{{twr}}%</td>
+            </tr>
+            {{/each}}
+        </table>
+    </section>
+
+    <script>
+        //should move this outside of the DOM 
+        var pieChartCanvas = document.getElementById('pieChart').getContext('2d')
+        var barChartCanvas = document.getElementById('barChart').getContext('2d')
+
+        var myPieChart = new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: ["SEK", "EUR", "USD"],
+                datasets: [{
+                    label: "Difference in currencies",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
+                    data: {{{ toJson pieChartData }}}
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                        text: 'Market value allocation in different currencies'
+                },
+                animation: {
+                    onComplete: function () {
+                        window.JSREPORT_READY_TO_START = true
+                    }
+                }
+            }
+        })
+
+        var myBarChart = new Chart(barChartCanvas, {
+            type: 'bar',
+            data: {
+                labels: ['Stock','Fund','Private Equity','Future cash-flow','Accounts'],
+                datasets: [
+                    {
+                        label: "EUR",
+                        backgroundColor: "#3e95cd",
+                        data: {{{toJson barChartData.eur}}}
+                    }, {
+                        label: "SEK",
+                        backgroundColor: "#8e5ea2",
+                        data: {{toJson barChartData.sek}}
+                    },
+                    {
+                        label: "USD",
+                        backgroundColor: "#3cba9f",
+                        data: {{toJson barChartData.usd}}
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Security types'
+                        }
+                    }]
+                },
+                title: {
+                    display: true,
+                    text: 'Market value allocation in different currencies'
+                },
+                 animation: {
+                    onComplete: function () {
+                        window.JSREPORT_READY_TO_START = true
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

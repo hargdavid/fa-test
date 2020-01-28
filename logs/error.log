@@ -1,0 +1,114 @@
+2020-01-27T13:28:33.204Z - error: Error when processing render request Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css' Error: Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css'
+    at readAsset (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:241:15)
+2020-01-27T13:28:33.205Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T13:28:34.247Z - error: Error when processing render request Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css' Error: Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css'
+    at readAsset (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:241:15)
+2020-01-27T13:28:34.247Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T13:28:45.776Z - error: Error when processing render request Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css' Error: Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css'
+    at readAsset (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:241:15)
+2020-01-27T13:28:45.776Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T13:28:51.312Z - error: Error when processing render request Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css' Error: Asset test-styles.css not found in the store and also not on the disk: Unable to find or read file /Users/david/code/fa-test/test-styles.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-styles.css'
+    at readAsset (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:241:15)
+2020-01-27T13:28:51.312Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T13:29:36.482Z - error: Error when processing OData POST: /odata/assets Error: Unable to find or read file /Users/david/code/fa-test/test-stylings.css. ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-stylings.css'
+    at module.exports (/Users/david/code/fa-test/node_modules/jsreport-core/lib/util/createError.js:11:13)
+    at Reporter.createError (/Users/david/code/fa-test/node_modules/jsreport-core/lib/reporter.js:299:12)
+    at readFile (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:115:20)
+caused by: Error: ENOENT: no such file or directory, open '/Users/david/code/fa-test/test-stylings.css'
+2020-01-27T13:29:53.829Z - error: Error when processing OData POST: /odata/assets Error: Duplicated entry for key test-styles.css
+    at persist (/Users/david/code/fa-test/node_modules/jsreport-fs-store/lib/persistence.js:173:11)
+    at async lock (/Users/david/code/fa-test/node_modules/jsreport-fs-store/lib/persistence.js:294:12)
+    at async Object.fn (/Users/david/code/fa-test/node_modules/jsreport-fs-store/lib/provider.js:119:7)
+2020-01-27T14:32:37.020Z - error: Error when processing render request Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot Error: Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot
+    at convert (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:55:15)
+    at /Users/david/code/fa-test/node_modules/async-replace/async-replace.js:63:26
+    at /Users/david/code/fa-test/node_modules/async/lib/async.js:718:13
+    at async.forEachOf.async.eachOf (/Users/david/code/fa-test/node_modules/async/lib/async.js:233:13)
+    at _parallel (/Users/david/code/fa-test/node_modules/async/lib/async.js:717:9)
+    at Object.async.parallel (/Users/david/code/fa-test/node_modules/async/lib/async.js:731:9)
+    at module.exports (/Users/david/code/fa-test/node_modules/async-replace/async-replace.js:71:11)
+    at tryCatcher (/Users/david/code/fa-test/node_modules/bluebird/js/release/util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (/Users/david/code/fa-test/node_modules/bluebird/js/release/promisify.js:1:1), <anonymous>:13:39)
+    at evaluateAssets (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:67:24)
+    at Object.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-assets/lib/assets.js:400:34)
+2020-01-27T14:32:37.020Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T16:00:13.091Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-27T16:00:13.091Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-27T16:00:49.284Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-27T16:00:49.285Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T07:21:35.846Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T07:21:35.846Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:29:20.752Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:29:20.753Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:29:31.857Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:29:31.857Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:29:33.653Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:29:33.653Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:29:37.100Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:29:37.100Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:32:26.469Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:32:26.470Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:32:50.606Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:32:50.606Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:34:38.141Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:34:38.142Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:34:41.546Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:34:41.546Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:35:26.621Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:35:26.621Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:36:26.817Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:36:26.817Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T10:38:05.153Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T10:38:05.154Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T11:05:42.587Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T11:05:42.588Z - error: Error during processing request at http://localhost:5488/api/report/test-main
+2020-01-28T11:56:45.209Z - error: Error when processing render request Timeout Error: pdf generation not completed after 40000ms Error: Timeout Error: pdf generation not completed after 40000ms
+    at Timeout.<anonymous> (/Users/david/code/fa-test/node_modules/jsreport-chrome-pdf/lib/conversion.js:192:19)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+2020-01-28T11:56:45.209Z - error: Error during processing request at http://localhost:5488/api/report/test-main

@@ -1,0 +1,33 @@
+{
+    "folder": {
+        "shortid": "~ZU7eaU"
+    },
+    "shortid": "HylYTyBh-U",
+    "name": "test-main",
+    "recipe": "chrome-pdf",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": true,
+        "waitForJS": true,
+        "waitForNetworkIddle": false,
+        "mediaType": "screen"
+    },
+    "creationDate": "2020-01-27T10:48:03.291Z",
+    "modificationDate": {
+        "$$date": 1580210148860
+    },
+    "_id": "ndDnxCBr6vwEX8Yq",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "H1xJSHr2ZI"
+        }
+    ],
+    "data": {
+        "shortid": "rylonvr3Z8"
+    },
+    "htmlToXlsx": {
+        "htmlEngine": "chrome"
+    },
+    "pdfOperations": []
+}

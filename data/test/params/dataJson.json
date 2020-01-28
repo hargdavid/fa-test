@@ -1,0 +1,12 @@
+ {
+     "params": {
+    "param-apiUri":"https://demo5.fasolutions.com/rs/",
+    "param-tokenName":"jsreporttest",
+    "param-tokenValue":"u587fnd6r9c5s5ifoegpsjp36lbi5ak2kim55nsl",
+    "param-portfolioId": [
+    1092,313787,315676,315701,315763
+    ],
+    "param-endDate": "2020-01-15",
+    "param-language": "en-US"
+    }
+}
