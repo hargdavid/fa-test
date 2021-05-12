@@ -9,7 +9,7 @@
     "entryPoint": "server.js"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "jsreport": "2.6.1"
   }
 }
